@@ -4,7 +4,32 @@
   box-sizing: border-box;
 }
 .App {
-  width: 30vw;
-  height: 99vh;
-  background-color: red;
+  width: 100vw;
+  height: 100vh;
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  width: 32%;
+  height: 95%;
+  background-color: white;
+  border-radius: 6%;
+  padding: 2%;
+  transition: width 1s;
+}
+@media (max-width: 430px) {
+  .container {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+}
+@media (min-width: 431px) {
+  .container {
+    width: 30%;
+    height: 95%;
+  }
 }
