@@ -1,0 +1,9 @@
+.seaarchBar {
+  width: 50%;
+  transition: width 1s;
+}
+@media (max-width: 450px) {
+  .seaarchBar {
+    width: 99vw;
+  }
+}
