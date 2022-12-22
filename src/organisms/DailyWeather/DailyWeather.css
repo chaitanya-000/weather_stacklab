@@ -3,23 +3,62 @@
   width: 95vw;
   height: 20vh;
   margin-top: 3vh;
-  padding: 1%;
+  padding: 0.5%;
   display: flex;
   align-items: center;
+  background-color: whitesmoke;
 }
 .dailyWeather_Container_SingleBlock {
-  width: 10%;
+  width: 8%;
   height: 100%;
-  border: 2px solid blue;
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  /* From https://css.glass */
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.2px);
+  -webkit-backdrop-filter: blur(6.2px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
+
+.dailyWeather_Container_SingleBlock h2 {
+  font-size: 1.5em;
+}
+
+.dailyWeather_Container_SingleBlock_MaxMinContainer {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  /* border: 1px solid blue; */
+}
+
+/* Media queries for mobile */
 @media (max-width: 500px) {
   .dailyWeather_Container {
-    height: 16%;
-    padding: 3%;
+    height: 20%;
+    padding: 2%;
+    margin-top: 1%;
   }
 
   .dailyWeather_Container_SingleBlock {
     width: 27%;
-    padding: 12%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid orange;
+  }
+  .dailyWeather_Container_SingleBlock h2 {
+    font-size: 1rem;
+  }
+  .dailyWeather_Container_SingleBlock_MaxMinContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid pink;
   }
 }
