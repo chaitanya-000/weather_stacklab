@@ -1,21 +1,19 @@
 .dailyWeather_Container {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 95vw;
   height: 20vh;
   margin-top: 3vh;
   padding: 0.5%;
   display: flex;
   align-items: center;
-  background-color: whitesmoke;
 }
 .dailyWeather_Container_SingleBlock {
   width: 8%;
   height: 100%;
-  border: 1px solid blue;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   /* From https://css.glass */
   /* From https://css.glass */
   background: rgba(255, 255, 255, 0.03);
@@ -30,27 +28,29 @@
 }
 
 .dailyWeather_Container_SingleBlock_MaxMinContainer {
-  width: 70%;
+  width: 80%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   /* border: 1px solid blue; */
 }
 
 /* Media queries for mobile */
 @media (max-width: 500px) {
   .dailyWeather_Container {
-    height: 20%;
+    height: 24%;
     padding: 2%;
     margin-top: 1%;
   }
 
   .dailyWeather_Container_SingleBlock {
-    width: 27%;
+    width: 30%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid orange;
+    /* justify-content: space-around; */
+    /* gap: 1%; */
+    /* border: 1px solid orange; */
   }
   .dailyWeather_Container_SingleBlock h2 {
     font-size: 1rem;
@@ -59,6 +59,6 @@
     width: 100%;
     display: flex;
     justify-content: space-around;
-    border: 1px solid pink;
+    /* border: 1px solid pink; */
   }
 }

@@ -13,21 +13,11 @@ function App() {
     setLatitude(position.coords.latitude);
   });
 
-  axios
-    .get(
-      `https://pro.openweathermap.org/data/2.5/forecast/climate?lat=${latitude}&lon=${longitude}&appid=f57e4860fc24f86437748df4654445a9&cnt=7&units=metric`
-    )
-    .then((response) => {
-      console.log(response.data.list);
-    });
-
-  // const date = new Date(1671690600);
-  // console.log(date);
   return (
     <div className="App">
       <div className="container">
         <SearchBar />
-        <DailyWeather />
+        <DailyWeather latitude={latitude} longitude={longitude} />
       </div>
     </div>
   );
