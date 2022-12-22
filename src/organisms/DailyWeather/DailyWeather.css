@@ -6,6 +6,7 @@
   padding: 0.5%;
   display: flex;
   align-items: center;
+  gap: 2%;
 }
 .dailyWeather_Container_SingleBlock {
   width: 8%;
@@ -37,9 +38,17 @@
 /* Media queries for mobile */
 @media (max-width: 500px) {
   .dailyWeather_Container {
-    height: 24%;
+    /* width: fit-content; */
+
+    height: 23%;
     padding: 2%;
     margin-top: 1%;
+    display: inline-flex;
+    align-items: center;
+    gap: 4%;
+    overflow: scroll;
+    flex: 0 1 1;
+    /* flex-wrap: ; */
   }
 
   .dailyWeather_Container_SingleBlock {
@@ -50,7 +59,7 @@
     align-items: center;
     /* justify-content: space-around; */
     /* gap: 1%; */
-    /* border: 1px solid orange; */
+    border: 1px solid orange;
   }
   .dailyWeather_Container_SingleBlock h2 {
     font-size: 1rem;
@@ -59,6 +68,10 @@
     width: 100%;
     display: flex;
     justify-content: space-around;
+
     /* border: 1px solid pink; */
+  }
+  .dailyWeather_Container_SingleBlock_MaxMinContainer p {
+    font-size: 0.6em;
   }
 }
