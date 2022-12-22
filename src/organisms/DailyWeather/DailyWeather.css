@@ -1,0 +1,25 @@
+.dailyWeather_Container {
+  border: 1px solid red;
+  width: 95vw;
+  height: 20vh;
+  margin-top: 3vh;
+  padding: 1%;
+  display: flex;
+  align-items: center;
+}
+.dailyWeather_Container_SingleBlock {
+  width: 10%;
+  height: 100%;
+  border: 2px solid blue;
+}
+@media (max-width: 500px) {
+  .dailyWeather_Container {
+    height: 16%;
+    padding: 3%;
+  }
+
+  .dailyWeather_Container_SingleBlock {
+    width: 27%;
+    padding: 12%;
+  }
+}
